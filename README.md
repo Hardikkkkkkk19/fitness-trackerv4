@@ -219,20 +219,6 @@ npm run dev
 
 ---
 
-## 🛡️ Environment Variables
-
-The application requires the following environment variables. Refer to `.env.example` for reference templates:
-
-| Variable | Description | Required |
-| :--- | :--- | :--- |
-| `VITE_SUPABASE_URL` | Your Supabase project URL | Yes |
-| `VITE_SUPABASE_ANON_KEY` | Your Supabase public API key | Yes |
-| `VITE_GEMINI_API_KEY` | Google Gemini API key | Yes |
-| `VITE_GROQ_API_KEY` | Groq API key for fast inference | No |
-| `VITE_RESEND_API_KEY` | Resend API key for workout emails | No |
-
----
-
 ## 🔮 Future Improvements
 
 * ⌚ **Wearable Device Integration** - Synced biometric logs for Apple Watch, Fitbit, and Garmin.
@@ -243,22 +229,13 @@ The application requires the following environment variables. Refer to `.env.exa
 
 ---
 
-## 🔗 Live Demo
-
-* **Development App**: [Live Dev Preview](https://ais-dev-hmw5ru37oaegcrtd6v2i3o-93288701512.asia-southeast1.run.app)
-* **Shared Production App**: [Live Shared Preview](https://ais-pre-hmw5ru37oaegcrtd6v2i3o-93288701512.asia-southeast1.run.app)
-* **Live Client Link**: (Add Vercel URL here when deployed)
-* **API Service Link**: (Add Render URL here when deployed)
-
----
-
 ## 👤 Author
 
 **Hardik Jadhav**
 
 * **GitHub**: [@Hardikkkkkkk19](https://github.com/Hardikkkkkkk19)
-* **Portfolio**: *(Add Portfolio URL)*
-* **LinkedIn**: *(Add LinkedIn URL)*
+* **Portfolio**: [https://premium-portfolio-zeta-nine.vercel.app/]
+* **LinkedIn**: [https://www.linkedin.com/in/hardik-jadhav-463710385/]
 
 ---
 <div align="center">
