@@ -1,0 +1,10 @@
+{
+  "name": "Remix: aura-ai-fitness-tracker",
+  "description": "Imported from GitHub: Hardikkkkkkk19/aura-ai-fitness-tracker",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
