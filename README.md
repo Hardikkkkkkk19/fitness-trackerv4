@@ -1,16 +1,107 @@
-# Aura AI — Premium OS for Athletic Performance
+<div align="center">
 
-Aura AI is a high-performance, full-stack athletic operating system built for elite athletes and fitness enthusiasts. Combining advanced metrics tracking, real-time Vision AI macro analysis, and a specialized AI Athletic Coach, Aura represents the modern standard in physical performance software.
+# 🌌 Aura AI — Premium OS for Athletic Performance
+
+<p align="center">
+  A premium, high-performance athletic operating system designed for elite athletes and fitness enthusiasts. Powered by React 19, Vite, Gemini Multimodal AI, and Supabase.
+</p>
+
+[![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
+[![Supabase](https://img.shields.io/badge/Supabase-Auth_%26_DB-3ECF8E?style=for-the-badge&logo=supabase)](https://supabase.com/)
+[![Gemini AI](https://img.shields.io/badge/Gemini_AI-Multimodal_API-orange?style=for-the-badge&logo=google)](https://ai.google.dev/)
+[![Vite](https://img.shields.io/badge/Vite-Fast_Build-646CFF?style=for-the-badge&logo=vite)](https://vite.dev/)
+
+<h4>
+  <a href="#-live-demo">Live Demo</a>
+  •
+  <a href="#-features">Key Features</a>
+  •
+  <a href="#-installation">Quick Start</a>
+  •
+  <a href="#-project-architecture">Architecture</a>
+</h4>
+
+</div>
+
+---
+
+## 📖 Table of Contents
+
+- [Overview](#-overview)
+- [Tech Stack](#-tech-stack)
+- [Key Features](#-key-features)
+- [Folder Structure](#-folder-structure)
+- [Project Architecture](#-project-architecture)
+- [Screenshots](#-screenshots)
+- [Installation](#-installation)
+- [Environment Variables](#-environment-variables)
+- [Future Improvements](#-future-improvements)
+- [Live Demo](#-live-demo)
+- [Author](#-author)
+
+---
+
+## 🌟 Overview
+
+**Aura AI** is a premium, AI-powered fitness operating system designed for athletes, fitness enthusiasts, and health-conscious users. It combines intelligent workout tracking, AI coaching, nutrition analysis, progress analytics, and computer vision into one modern, highly-polished web application.
 
 ---
 
 ## 🚀 Tech Stack
 
-- **Frontend**: React 19, Vite, Tailwind CSS v4, Motion (formerly Framer Motion), Lucide Icons
-- **Backend**: Node.js, Express
-- **AI Engine**: Gemini AI (Multimodal text & vision models)
-- **Database / Auth**: Supabase DB & Supabase Authentication (with complete seamless development sandbox fallbacks)
-- **Notifications**: Resend API Integration
+Aura AI is built using the industry's most modern and powerful developer tools:
+
+### Frontend
+* **React 19** - Standard Declarative UI component library.
+* **TypeScript** - Strict compile-time type safety.
+* **Vite** - High-speed, modern bundler and development server.
+* **Tailwind CSS v4** - High-performance, modern utility-first CSS engine.
+* **Motion** - Fluid physical and gesture-driven layout animations.
+* **Lucide React** - Clean and consistent vector-based iconography.
+
+### Backend
+* **Node.js & Express.js** - Ultra-reliable API framework and request middleware layer.
+
+### AI Engine
+* **Gemini AI** - Personal text consultation engine.
+* **Vision AI** - Multimodal image scanning for nutritional estimation.
+
+### Database & Authentication
+* **Supabase** - Postgres backend engine.
+* **Supabase Authentication** - Secure OAuth and email-based authorization with built-in sandbox modes.
+
+### Email
+* **Resend API** - Automated transactional messaging.
+
+### Deployment
+* **Vercel** - Production client-side delivery.
+* **Render** - Continuous backend service integration.
+
+---
+
+## ⚡ Key Features
+
+### 💎 Premium Landing Page
+Immersive user interface containing glassmorphic styling, neon aurora glows, responsive mockup frames, and buttery-smooth entry animations.
+
+### 🔐 Double-State Authentication
+Full-scale Supabase signup, login, and password recovery. Includes a dedicated **Quick Access Demo** sandbox mode to instantly explore full dashboard features without setting up an account.
+
+### 📊 Performance Dashboard
+Monitor daily active calories, hydration counts, training metrics, and macronutrient balances with customizable interactive layouts.
+
+### 🧠 AI Athletic Coach
+Consult your specialized AI trainer for customized daily workouts, diet breakdowns, performance analysis, and posture guidelines.
+
+### 👁️ Vision Food Scanner
+Upload or drag-and-drop meal images to instantly extract calorie limits, proteins, fats, and carb ratios powered by advanced multimodal models.
+
+### 📈 Activity Analytics
+Full visual reporting with clean tracking lines, progression bars, and interactive activity charts.
+
+### 📬 Transactional Email Automation
+Get a neat breakdown of your workout stats and nutritional highlights delivered directly to your inbox using Resend.
 
 ---
 
@@ -21,60 +112,155 @@ Our codebase is meticulously partitioned into two primary, self-contained direct
 ```text
 /
 ├── api/
-│   └── server.ts          # Express Server with Gemini AI, Vision & Resend endpoints
+│   └── server.ts          # Express Server handling Gemini, Vision & Resend endpoints
 │
 └── frontend/
-    ├── assets/            # Static assets and illustration configurations
-    ├── components/        # High-performance UI components (Navbar, Sidebar)
-    ├── context/           # AuthContext managing session states
-    ├── pages/             # Layout screens (LandingPage, LoginPage, Dashboard, etc.)
-    ├── routes/            # Route wrapper (ProtectedRoute)
-    ├── services/          # Client API services (supabase.ts, authService.ts, groq.ts)
-    ├── utils/             # Helper utilities
-    ├── App.tsx            # Main routes orchestrator
+    ├── assets/            # Static image assets and icons
+    ├── components/        # High-performance reusable components (Navbar, Sidebar)
+    ├── context/           # AuthContext managing user and sandbox session states
+    ├── pages/             # Dynamic layout screens (Dashboard, Coach, Scanner, Workouts)
+    ├── routes/            # Route wraps and access levels (ProtectedRoute)
+    ├── services/          # API services (supabase.ts, authService.ts)
+    ├── utils/             # Formatters, calculators, and helpers
+    ├── App.tsx            # Routes orchestrator
     ├── main.tsx           # Client entry point
-    └── index.css          # Core styles, fonts and custom glassmorphism declarations
+    └── index.css          # Core styles and custom variables
 ```
 
 ---
 
-## ⚡ Key Features
+## 🏗️ Project Architecture
 
-1. **Stripe-Grade Landing Page**: Immerse yourself in our premium, high-contrast dark space with responsive aurora glow backdrops, interactive mockup panels, and fluid typography.
-2. **Double-State Authentication**: Real-time Supabase signups and sign-ins backed by an instant-access Sandbox Demo button.
-3. **Advanced Training Dashboard**: Review workout schedules, water hydration metrics, and macro budgets dynamically with custom SVG interactive charts.
-4. **AI Athletic Coach**: Consult with a personalized AI coach on custom hyperbolic workout splits, macronutrient counts, and sleep hygiene advice.
-5. **Vision Food Macro Scanner**: Scan pictures of your meal to instantly estimate calorie levels and protein breakdowns using advanced multimodal vision models.
-
----
-
-## ⚙️ Installation & Development
-
-To initiate the workspace locally:
-
-1. Clone the project.
-2. Install standard dependencies:
-   ```bash
-   npm install
-   ```
-3. Copy the environment variables:
-   ```bash
-   cp .env.example .env
-   ```
-4. Configure optional environment variables for Supabase in your client bundle:
-   ```env
-   VITE_SUPABASE_URL=YOUR_SUPABASE_URL
-   VITE_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
-   ```
-5. Launch the local dev environment:
-   ```bash
-   npm run dev
-   ```
-   *Express server will launch on port 3000.*
+```text
+       ┌────────────────────────┐
+       │   React 19 Frontend    │
+       └───────────┬────────────┘
+                   │
+                   ▼ (Express API)
+       ┌────────────────────────┐
+       │     Node.js Server     │
+       └─────┬───────────┬──────┘
+             │           │
+             ▼           ▼
+┌────────────────┐   ┌────────────────┐
+│   Gemini AI    │   │  Resend Email  │
+│  & Vision AI   │   │    Service     │
+└────────────────┘   └────────────────┘
+             │
+             ▼
+┌────────────────┐
+│    Supabase    │
+│  Postgres DB   │
+└────────────────┘
+```
 
 ---
 
-## 🔗 Project Links
+## 📸 Screenshots
 
-- **Live Preview**: [Development App URL](https://ais-dev-2xl53hclxgbntikz5glsgy-93288701512.asia-southeast1.run.app)
-- **Shared App**: [Shared App URL](https://ais-pre-2xl53hclxgbntikz5glsgy-93288701512.asia-southeast1.run.app)
+### Landing Page
+![Landing Page](./screenshots/landing-page.png)
+
+### Login
+![Login](./screenshots/login.png)
+
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### Workout Tracker
+![Workout Tracker](./screenshots/workout.png)
+
+### AI Coach
+![AI Coach](./screenshots/coach.png)
+
+### Vision AI
+![Vision AI](./screenshots/vision.png)
+
+### Analytics
+![Analytics](./screenshots/analytics.png)
+
+### Profile
+![Profile](./screenshots/profile.png)
+
+### Settings
+![Settings](./screenshots/settings.png)
+
+---
+
+## ⚙️ Installation
+
+Follow these steps to launch the system in your local workspace:
+
+### 1. Install Dependencies
+```bash
+npm install
+```
+
+### 2. Configure Environment Variables
+Create a `.env` file in your root folder and add the required credentials:
+```env
+# Supabase Configuration
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+# AI API Keys
+VITE_GEMINI_API_KEY=your_gemini_api_key
+VITE_GROQ_API_KEY=your_groq_api_key
+
+# Email Service
+VITE_RESEND_API_KEY=your_resend_api_key
+```
+
+### 3. Run Development Server
+```bash
+npm run dev
+```
+*Your application will run on http://localhost:3000*
+
+---
+
+## 🛡️ Environment Variables
+
+The application requires the following environment variables. Refer to `.env.example` for reference templates:
+
+| Variable | Description | Required |
+| :--- | :--- | :--- |
+| `VITE_SUPABASE_URL` | Your Supabase project URL | Yes |
+| `VITE_SUPABASE_ANON_KEY` | Your Supabase public API key | Yes |
+| `VITE_GEMINI_API_KEY` | Google Gemini API key | Yes |
+| `VITE_GROQ_API_KEY` | Groq API key for fast inference | No |
+| `VITE_RESEND_API_KEY` | Resend API key for workout emails | No |
+
+---
+
+## 🔮 Future Improvements
+
+* ⌚ **Wearable Device Integration** - Synced biometric logs for Apple Watch, Fitbit, and Garmin.
+* 🍽️ **AI Meal Planner** - Dynamically customized shopping lists and recipes matching daily macro goals.
+* 🏋️ **Smart Workout Recommendations** - Adjust schedules based on fatigue and muscle recovery.
+* 📄 **Weekly PDF Reports** - Professional, downloadable progress charts sent automatically.
+* ☁️ **Cloud Backup** - Distributed secondary sync backups for user progress logs.
+
+---
+
+## 🔗 Live Demo
+
+* **Development App**: [Live Dev Preview](https://ais-dev-hmw5ru37oaegcrtd6v2i3o-93288701512.asia-southeast1.run.app)
+* **Shared Production App**: [Live Shared Preview](https://ais-pre-hmw5ru37oaegcrtd6v2i3o-93288701512.asia-southeast1.run.app)
+* **Live Client Link**: (Add Vercel URL here when deployed)
+* **API Service Link**: (Add Render URL here when deployed)
+
+---
+
+## 👤 Author
+
+**Hardik Jadhav**
+
+* **GitHub**: [@Hardikkkkkkk19](https://github.com/Hardikkkkkkk19)
+* **Portfolio**: *(Add Portfolio URL)*
+* **LinkedIn**: *(Add LinkedIn URL)*
+
+---
+<div align="center">
+  <sub>Built with ❤️ by Hardik Jadhav</sub>
+</div>
